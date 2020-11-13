@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTech", "HappyTech\HappyTech.csproj", "{644EAAC9-DE14-478C-8DE6-E0690FF0C2B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644EAAC9-DE14-478C-8DE6-E0690FF0C2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644EAAC9-DE14-478C-8DE6-E0690FF0C2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644EAAC9-DE14-478C-8DE6-E0690FF0C2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644EAAC9-DE14-478C-8DE6-E0690FF0C2B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0038185-39BC-476F-8048-8FA90A2AD6DA}
+	EndGlobalSection
+EndGlobal
