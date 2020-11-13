@@ -28,32 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.candidateDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.candidateDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // candidateDataGridView
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(473, 256);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "View All Candidates";
+            this.candidateDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.candidateDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.candidateDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.candidateDataGridView.Name = "candidateDataGridView";
+            this.candidateDataGridView.Size = new System.Drawing.Size(985, 561);
+            this.candidateDataGridView.TabIndex = 0;
             // 
             // ViewAllCandidatesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.candidateDataGridView);
             this.Name = "ViewAllCandidatesUserControl";
             this.Size = new System.Drawing.Size(985, 561);
+            this.Load += new System.EventHandler(this.ViewAllCandidatesUserControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.candidateDataGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView candidateDataGridView;
     }
 }
