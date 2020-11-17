@@ -43,7 +43,7 @@
             this.timeLabel = new System.Windows.Forms.Label();
             this.timeDateTimer = new System.Windows.Forms.Timer(this.components);
             this.dashboardUserControl1 = new HappyTech.DashboardUserControl();
-            this.addEditCandidateUserControl1 = new HappyTech.AddEditCandidateUserControl();
+            this.addEditCandidateUserControl1 = new HappyTech.ucAddEditCandidate();
             this.viewAllCandidatesUserControl1 = new HappyTech.ViewAllCandidatesUserControl();
             this.editTemplatesUserControl1 = new HappyTech.EditTemplatesUserControl();
             this.sendAllFeedbackUserControl1 = new HappyTech.SendAllFeedbackUserControl();
@@ -326,7 +326,7 @@
         private System.Windows.Forms.Button addEditCandidateNavButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DashboardUserControl dashboardUserControl1;
-        private AddEditCandidateUserControl addEditCandidateUserControl1;
+        private ucAddEditCandidate addEditCandidateUserControl1;
         private ViewAllCandidatesUserControl viewAllCandidatesUserControl1;
         private EditTemplatesUserControl editTemplatesUserControl1;
         private SendAllFeedbackUserControl sendAllFeedbackUserControl1;

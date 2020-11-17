@@ -22,9 +22,14 @@ namespace HappyTech
             //Display the data from table Candidate into the DataGridView
             //Get the dataset from the DB and assign it to the dataGridView's DataSource
             //candidateDataGridView.Datasource = ....
-            DataSet ds = DBConnection.getInstanceOfDBConnection().getDataSet("SELECT * FROM Candidate");
+            DataSet ds = DBConnection.getInstanceOfDBConnection().getDataSet(Constants.ViewAllCandidates);
             candidateDataGridView.DataSource = ds.Tables[0];
 
+        }
+
+        private void candidateDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

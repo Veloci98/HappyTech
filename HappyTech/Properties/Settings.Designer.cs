@@ -27,7 +27,7 @@ namespace HappyTech.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\CandidateFeed" +
-            "backDB.mdf;Integrated Security=True")]
+            "backDB.mdf;Integrated Security=True;User Instance=False")]
         public string CandidateFeedbackConnectionString {
             get {
                 return ((string)(this["CandidateFeedbackConnectionString"]));

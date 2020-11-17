@@ -33,6 +33,7 @@ namespace HappyTech
         /// <returns></returns>
         public static DBConnection getInstanceOfDBConnection()
         {
+            // create the object only if the method is called
             if (_instance == null)
                 _instance = new DBConnection();
             return _instance;
@@ -58,6 +59,43 @@ namespace HappyTech
                 dataAdapter.Fill(dataSet);
             }
             return dataSet;
+        }
+
+        /// <summary>
+        /// Method that saves data into the database
+        /// </summary>
+        public void saveToDB(string sqlQuery, string firstname, string surname, string email, string contactNo, string dateOfBirth, string houseNoName, string streetName, string cityName, string county, string postcode, string country, string passportNo)
+        {
+            using (SqlConnection connToDB = new SqlConnection(connStr))
+            {
+                //Open connection
+                connToDB.Open();
+
+                SqlCommand sqlCommand = new SqlCommand(sqlQuery, connToDB);
+
+                //set the sqlCommand's properties
+                sqlCommand.CommandType = CommandType.Text;
+
+                //add the parameters to the sqlCommand
+                sqlCommand.Parameters.Add(new SqlParameter("Firstname", firstname));
+                sqlCommand.Parameters.Add(new SqlParameter("Surname", surname));
+                sqlCommand.Parameters.Add(new SqlParameter("Email", email));
+                sqlCommand.Parameters.Add(new SqlParameter("Contact_Number", contactNo));
+                sqlCommand.Parameters.Add(new SqlParameter("Date_of_Birth", dateOfBirth));
+                sqlCommand.Parameters.Add(new SqlParameter("House_Number_Name", houseNoName));
+                sqlCommand.Parameters.Add(new SqlParameter("Street_Name", streetName));
+                sqlCommand.Parameters.Add(new SqlParameter("City_Name", cityName));
+                sqlCommand.Parameters.Add(new SqlParameter("County", county));
+                sqlCommand.Parameters.Add(new SqlParameter("Postcode", postcode));
+                sqlCommand.Parameters.Add(new SqlParameter("Country", country));
+                sqlCommand.Parameters.Add(new SqlParameter("Passport_Number", passportNo));
+
+                //Execute the command
+                sqlCommand.ExecuteNonQuery();
+
+                connToDB.Close();
+            }
+
         }
 
     }

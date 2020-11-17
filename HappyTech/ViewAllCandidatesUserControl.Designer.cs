@@ -40,6 +40,7 @@
             this.candidateDataGridView.Name = "candidateDataGridView";
             this.candidateDataGridView.Size = new System.Drawing.Size(985, 561);
             this.candidateDataGridView.TabIndex = 0;
+            this.candidateDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.candidateDataGridView_CellContentClick);
             // 
             // ViewAllCandidatesUserControl
             // 

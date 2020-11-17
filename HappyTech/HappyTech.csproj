@@ -67,6 +67,7 @@
     <Compile Include="AddEditCandidateUserControl.Designer.cs">
       <DependentUpon>AddEditCandidateUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
     <Compile Include="DashboardUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
